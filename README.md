@@ -9,11 +9,15 @@ Anggota Kelompok:
  
 Dalam aplikasi yang akan dibuat, kami menyediakan beberapa fitur, antar lain seperti:
   1. Fungsi Admin </br>
-    a.
-    b.
-  2. Fungsi User
-    a.
-    b.
+    a. Login ke aplikasi. </br>
+    b. Menambahkan informasi dan jenis mobil baru yang dapat di-rental oleh User. </br>
+    c. Mengupdate informasi dan jenis mobil mobil yang sudah terdaftar. </br>
+    d. Menghapus informasi dan jenis mobil yang sudah tercatat. </br>
+  2. Fungsi User </br>
+    a. Melihat informasi mobil-mobil yang dapat di-rental. </br>
+    b. Pencarian mobil berdasarkan kata kunci. </br>
+    c. Filter/sortir berdasarkan jenis ataupun harga mobil. </br>
+    d. Melakukan rental mobil dan proses pembayarannya. </br>
 
 
 **Repo ini adalah bagian dari Tugas Akhir Rekayasa Perangkat Lunak Semester Group D Genap 2022/2023**
