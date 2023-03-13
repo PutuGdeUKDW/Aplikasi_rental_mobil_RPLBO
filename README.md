@@ -8,6 +8,12 @@ Anggota Kelompok:
   3. 71210816 - Putu Gde Qwat Bayu Liandaru
  
 Dalam aplikasi yang akan dibuat, kami menyediakan beberapa fitur, antar lain seperti:
+  1. Fungsi Admin
+    a.
+    b.
+  2. Fungsi User
+    a.
+    b.
 
 
 **Repo ini adalah bagian dari Tugas Akhir Rekayasa Perangkat Lunak Semester Group D Genap 2022/2023**
