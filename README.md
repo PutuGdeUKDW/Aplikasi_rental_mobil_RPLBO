@@ -7,7 +7,7 @@ Anggota Kelompok:
   2. 71210779 - Stefanus Sety Nugroho
   3. 71210816 - Putu Gde Qwat Bayu Liandaru
  
-Dalam aplikasi yang akan kami buat kami menyediakan beberapa fitur, antar lain seperti:
+Dalam aplikasi yang akan dibuat, kami menyediakan beberapa fitur, antar lain seperti:
 
 
 **Repo ini adalah bagian dari Tugas Akhir Rekayasa Perangkat Lunak Semester Group D Genap 2022/2023**
