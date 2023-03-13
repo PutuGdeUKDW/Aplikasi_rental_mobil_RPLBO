@@ -4,7 +4,7 @@ Aplikasi rental mobil ini adalah prototype untuk menguji fitur dan fungsionalita
 
 Anggota Kelompok:
   1. 71210695 - Cahaya Sampebua
-  2. 71210779 - Stefanus Sety Nugroho
+  2. 71210779 - Stefanus Setyo Nugroho
   3. 71210816 - Putu Gde Qwat Bayu Liandaru
  
 Dalam aplikasi yang akan dibuat, kami menyediakan beberapa fitur, antar lain seperti:
