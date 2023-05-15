@@ -8,23 +8,30 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.project_akhir.DetailMobil">
    <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="-1.0" layoutY="-1.0" opacity="0.4" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../../../img/background%20aplikasi.jpg" />
+         </image>
+      </ImageView>
       <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="70.0" text="Kembali" />
-      <Text layoutX="292.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOYOTA CALYA E" wrappingWidth="160.07696533203125">
+      <Text layoutX="216.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOYOTA CALYA E" textAlignment="CENTER" wrappingWidth="188.0000366210936">
          <font>
-            <Font size="15.0" />
+            <Font name="System Bold" size="20.0" />
          </font>
       </Text>
       <Text layoutX="292.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rp. 160.000/Hari" wrappingWidth="160.07696533203125">
          <font>
-            <Font size="20.0" />
+            <Font name="System Bold" size="15.5" />
          </font>
       </Text>
       <Text layoutX="292.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Detail:" wrappingWidth="36.87701416015625" />
       <TextArea layoutX="292.0" layoutY="134.0" prefHeight="78.0" prefWidth="266.0" text="- Transmisi Otomatis&#10;- Tenaga 87 hp&#10;- Ka[asitas Tempat Duduk 7&#10;- Kapasitas Mesin 1197 cc" />
-      <Button layoutX="297.0" layoutY="245.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="150.0" text="RENTAL" />
+      <Button layoutX="297.0" layoutY="245.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="150.0" text="RENTAL">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
       <ImageView fitHeight="325.0" fitWidth="249.0" layoutX="14.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../img/Calya%201.jpg" />
