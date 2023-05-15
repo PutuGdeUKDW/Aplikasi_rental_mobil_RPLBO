@@ -12,89 +12,105 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="381.0" prefWidth="583.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.project_akhir.UserMainMenu">
    <children>
-      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Back" />
+      <ImageView fitHeight="344.0" fitWidth="629.0" opacity="0.4" pickOnBounds="true">
+         <image>
+            <Image url="@../../../img/background%20aplikasi.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Kembali" />
       <AnchorPane layoutX="3.0" layoutY="8.0" prefHeight="57.0" prefWidth="577.0">
          <children>
-            <TextField alignment="TOP_LEFT" layoutX="109.0" layoutY="16.0" prefHeight="25.0" prefWidth="452.0" promptText="Search" />
-            <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="534.0" layoutY="19.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+            <TextField alignment="TOP_LEFT" layoutX="177.0" layoutY="16.0" prefHeight="25.0" prefWidth="431.0" promptText="Search" />
+            <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="584.0" layoutY="19.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../img/search_logo-removebg-preview.jpg" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
-      <Pane layoutX="14.0" layoutY="75.0" prefHeight="283.0" prefWidth="153.0" style="-fx-border-color: black; -fx-background-radius: ;">
+      <Pane layoutX="14.0" layoutY="75.0" prefHeight="283.0" prefWidth="156.0" style="-fx-border-color: black; -fx-background-color: white; -fx-background-radius: ;">
          <children>
-            <RadioButton layoutX="17.0" layoutY="26.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="64.0" text="Manual">
+            <RadioButton layoutX="16.0" layoutY="53.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="64.0" text="Manual">
                <font>
                   <Font size="6.0" />
                </font>
             </RadioButton>
-            <RadioButton layoutX="86.0" layoutY="26.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="64.0" text="Otomatis">
+            <RadioButton layoutX="83.0" layoutY="53.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="64.0" text="Otomatis">
                <font>
                   <Font size="6.0" />
                </font>
             </RadioButton>
-            <Text layoutX="11.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Jenis Transmisi Mobil" />
-            <Text layoutX="14.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brand Mobil" />
-            <RadioButton layoutX="15.0" layoutY="69.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="64.0" text="Toyota">
+            <Text layoutX="13.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Jenis Transmisi Mobil">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Text>
+            <Text layoutX="16.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brand Mobil">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Text>
+            <RadioButton layoutX="16.0" layoutY="93.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="64.0" text="Toyota">
                <font>
                   <Font size="6.0" />
                </font>
             </RadioButton>
-            <RadioButton layoutX="85.0" layoutY="69.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="64.0" text="Honda">
+            <RadioButton layoutX="83.0" layoutY="94.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="64.0" text="Honda">
                <font>
                   <Font size="6.0" />
                </font>
             </RadioButton>
-            <RadioButton layoutX="15.0" layoutY="85.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="64.0" text="BMW">
+            <RadioButton layoutX="16.0" layoutY="110.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="64.0" text="BMW">
                <font>
                   <Font size="6.0" />
                </font>
             </RadioButton>
-            <RadioButton layoutX="85.0" layoutY="85.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="64.0" text="Ferari">
+            <RadioButton layoutX="83.0" layoutY="110.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="64.0" text="Ferari">
                <font>
                   <Font size="6.0" />
                </font>
             </RadioButton>
-            <Text layoutX="13.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jenis Mobil" />
-            <RadioButton layoutX="16.0" layoutY="134.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="61.0" text="SUV">
+            <Text layoutX="16.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jenis Mobil">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Text>
+            <RadioButton layoutX="16.0" layoutY="152.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="61.0" text="SUV">
                <font>
                   <Font size="6.0" />
                </font>
             </RadioButton>
-            <RadioButton layoutX="84.0" layoutY="134.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="64.0" text="Crossover">
+            <RadioButton layoutX="84.0" layoutY="153.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="64.0" text="Crossover">
                <font>
                   <Font size="6.0" />
                </font>
             </RadioButton>
-            <RadioButton layoutX="16.0" layoutY="152.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="64.0" text="Sedan">
+            <RadioButton layoutX="16.0" layoutY="168.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="64.0" text="Sedan">
                <font>
                   <Font size="6.0" />
                </font>
             </RadioButton>
-            <RadioButton layoutX="84.0" layoutY="152.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="64.0" text="LCGC">
+            <RadioButton layoutX="84.0" layoutY="169.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="64.0" text="LCGC">
                <font>
                   <Font size="6.0" />
                </font>
             </RadioButton>
-            <Text layoutX="14.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kapasitas" />
-            <TextField layoutX="14.0" layoutY="203.0" prefHeight="13.0" prefWidth="119.0">
+            <Text layoutX="16.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kapasitas">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Text>
+            <TextField layoutX="17.0" layoutY="218.0" prefHeight="14.0" prefWidth="115.0">
                <font>
                   <Font size="6.0" />
                </font>
             </TextField>
          </children>
       </Pane>
-      <TableView layoutX="191.0" layoutY="78.0" prefHeight="283.0" prefWidth="375.0">
+      <TableView layoutX="181.0" layoutY="78.0" prefHeight="283.0" prefWidth="431.0">
         <columns>
           <TableColumn prefWidth="30.66668701171875" text="No." />
-          <TableColumn prefWidth="128.6667022705078" text="Nama Mobil" />
-            <TableColumn prefWidth="146.0" text="Harga Rental" />
-            <TableColumn prefWidth="67.33328247070312" text="Action" />
+          <TableColumn prefWidth="137.99998474121094" text="Nama Mobil" />
+            <TableColumn prefWidth="168.00003051757812" text="Harga Rental" />
+            <TableColumn prefWidth="92.66668701171875" text="Action" />
         </columns>
       </TableView>
    </children>
