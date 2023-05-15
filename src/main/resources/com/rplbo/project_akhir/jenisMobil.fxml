@@ -9,13 +9,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.project_akhir.AdminHomeController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.project_akhir.JenisMobilController">
    <children>
       <Pane layoutY="3.0" prefHeight="85.0" prefWidth="600.0">
          <children>
             <Button fx:id="backBttn" layoutX="14.0" layoutY="2.0" mnemonicParsing="false" onAction="#toLogin" text="Back" />
-            <Button layoutX="20.0" layoutY="43.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="119.0" text="+Informasi Mobil" />
-            <Button layoutX="152.0" layoutY="43.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="119.0" text="Jenis Mobil" />
+            <Button layoutX="14.0" layoutY="44.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="119.0" text="+Jenis Mobil" />
             <TextField layoutX="286.0" layoutY="47.0" prefHeight="25.0" prefWidth="247.0" promptText="Search" />
             <Button layoutX="542.0" layoutY="47.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0">
                <graphic>
@@ -28,17 +27,16 @@
             </Button>
          </children>
       </Pane>
-      <TableView layoutX="10.0" layoutY="106.0" prefHeight="279.0" prefWidth="579.0">
-        <columns>
-          <TableColumn prefWidth="75.0" text="Jenis Mobil" />
-          <TableColumn prefWidth="75.0" text="Tipe Mobil" />
-            <TableColumn prefWidth="75.0" text="Tranmisi" />
-            <TableColumn prefWidth="75.0" text="Nama Mobil" />
-            <TableColumn prefWidth="75.0" text="Kapasitas" />
-            <TableColumn prefWidth="75.0" text="Harga" />
-            <TableColumn minWidth="0.0" prefWidth="77.5999755859375" text="Status" />
-            <TableColumn prefWidth="47.9998779296875" text="Action" />
-        </columns>
+      <TableView fx:id="jenisMobilTable" layoutX="10.0" layoutY="106.0" prefHeight="279.0" prefWidth="579.0">
+         <columns>
+            <TableColumn id="namaMobil" fx:id="namaMobil" prefWidth="102.39999103546143" text="Nama Mobil" />
+            <TableColumn id="merk" fx:id="merk" prefWidth="68.79998779296875" text="Merk" />
+            <TableColumn id="mesin" fx:id="mesin" prefWidth="68.79998779296875" text="Mesin" />
+            <TableColumn fx:id="kapasitas" prefWidth="72.00001525878906" text="Kapasitas" />
+            <TableColumn fx:id="transmisi" prefWidth="96.79998779296875" text="Transmisi" />
+            <TableColumn fx:id="jenis" minWidth="0.0" prefWidth="96.0" text="Jenis" />
+            <TableColumn fx:id="action" prefWidth="75.20001220703125" text="Action" />
+         </columns>
       </TableView>
    </children>
 </AnchorPane>
