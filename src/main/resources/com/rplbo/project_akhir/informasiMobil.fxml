@@ -4,14 +4,19 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Rectangle?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Back" />
+      <ImageView fitHeight="407.0" fitWidth="600.0" opacity="0.4" pickOnBounds="true">
+         <image>
+            <Image url="@../../../img/background%20aplikasi.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Kembali" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dadbdc" height="231.0" layoutX="14.0" layoutY="51.0" stroke="BLACK" strokeType="INSIDE" width="217.0" />
       <TextField layoutX="264.0" layoutY="71.0" />
       <TextField layoutX="429.0" layoutY="71.0" />
@@ -19,9 +24,9 @@
       <Label layoutX="429.0" layoutY="51.0" text="Harga Rental/Hari" />
       <ComboBox layoutX="263.0" layoutY="121.0" prefWidth="150.0" />
       <Label layoutX="264.0" layoutY="104.0" text="Jenis Mobil" />
-      <Button layoutX="260.0" layoutY="235.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="68.0" text="SAVE" />
-      <Button layoutX="345.0" layoutY="235.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="68.0" text="DELETE" />
-      <Button layoutX="14.0" layoutY="290.0" mnemonicParsing="false" text="Upload Image" />
+      <Button layoutX="305.0" layoutY="235.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="68.0" text="Simpan" />
+      <Button layoutX="464.0" layoutY="235.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="74.0" text="Hapus" />
+      <Button layoutX="48.0" layoutY="154.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Unggah Gambar" />
       <ImageView fitHeight="231.0" fitWidth="217.0" layoutX="14.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </Pane>
