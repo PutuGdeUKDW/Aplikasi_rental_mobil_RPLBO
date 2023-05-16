@@ -87,7 +87,6 @@ public class InformasiMobilController implements Initializable {
         String hargaRental = hargaRentalField.getText();
         String jenisMobil = jenisMobilComboBox.getValue();
         JenisMobilTable jenisMobilObj = null;
-        System.out.println("Size of jenisMobilTableList: " + jenisMobilTableList.getList().size());
         for (JenisMobilTable j : jenisMobilTableList.getList()) {
             System.out.println(j.getNamaMobil());
             if (j.getNamaMobil().equals(jenisMobil)) {
@@ -96,16 +95,13 @@ public class InformasiMobilController implements Initializable {
             }}
             this.mobil = new InformasiMobil(jenisMobilObj, namaPlatMobil, Double.parseDouble(hargaRental));
 
-            AdminHomeController jenisMobilController = new AdminHomeController();
-            
-
             StorageInformasiMobil.getListMobil().add(mobil);
-            
-            for (InformasiMobil i : jenisMobilController.getData()) {
-                System.out.println(i.getNamaMobil() + " , " + i.getJenisMobil());
             }
-            //jenisMobilController.refreshData();
-        }
+    public void deleteButtonAction(ActionEvent event){
+        namaPlatMobilField.setText(null);
+        hargaRentalField.setText(null);
+        jenisMobilComboBox.setValue(null);
+    }
 
     public InformasiMobil getMobil(){
         return mobil;

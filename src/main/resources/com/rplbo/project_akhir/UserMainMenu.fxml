@@ -105,12 +105,12 @@
             </TextField>
          </children>
       </Pane>
-      <TableView layoutX="181.0" layoutY="78.0" prefHeight="283.0" prefWidth="431.0">
+      <TableView fx:id="tableView" layoutX="181.0" layoutY="78.0" prefHeight="283.0" prefWidth="431.0">
         <columns>
-          <TableColumn prefWidth="30.66668701171875" text="No." />
-          <TableColumn prefWidth="137.99998474121094" text="Nama Mobil" />
-            <TableColumn prefWidth="168.00003051757812" text="Harga Rental" />
-            <TableColumn prefWidth="92.66668701171875" text="Action" />
+          <TableColumn fx:id="numberColumn" prefWidth="30.66668701171875" text="No." />
+          <TableColumn fx:id="nameColumn" prefWidth="137.99998474121094" text="Nama Mobil" />
+            <TableColumn fx:id="rentalPriceColumn" prefWidth="168.00003051757812" text="Harga Rental" />
+            <TableColumn fx:id="actionColumn" prefWidth="92.66668701171875" text="Action" />
         </columns>
       </TableView>
    </children>

@@ -1,20 +1,30 @@
 package com.rplbo.project_akhir;
 
+import javafx.scene.control.Button;
+
 public class JenisMobilTable {
     int id,kapasitas;
     String namaMobil,merk,mesin,transmisi,jenis;
+    static int nextId=0;
+    Button action = new Button("Edit");
 
-    public JenisMobilTable(int id,String namaMobil,String merk,String mesin ,int kapasitas,String transmisi,String jenis){
+    public JenisMobilTable(String namaMobil,String merk,String mesin ,int kapasitas,String transmisi,String jenis){
         this.namaMobil = namaMobil;
         this.merk = merk;
         this.mesin = mesin;
         this.kapasitas = kapasitas;
         this.transmisi = transmisi;
         this.jenis = jenis;
-        this.id = id;
+        this.id = nextId;
+        this.action.setText("Edit");
+        nextId++;
     }
     public int getId() {
         return id;
+    }
+
+    public Button getAction(){
+        return this.action;
     }
 
     public int getKapasitas() {

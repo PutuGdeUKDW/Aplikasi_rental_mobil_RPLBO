@@ -15,20 +15,20 @@
             <Image url="@../../../img/background%20aplikasi.jpg" />
          </image>
       </ImageView>
-      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="70.0" text="Kembali" />
-      <Text layoutX="216.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOYOTA CALYA E" textAlignment="CENTER" wrappingWidth="188.0000366210936">
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#toBack" prefHeight="26.0" prefWidth="70.0" text="Kembali" />
+      <Text fx:id="carTitle" layoutX="216.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOYOTA CALYA E" textAlignment="CENTER" wrappingWidth="188.0000366210936">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Text>
-      <Text layoutX="292.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rp. 160.000/Hari" wrappingWidth="160.07696533203125">
+      <Text fx:id="rentalPrice" layoutX="292.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rp. 160.000/Hari" wrappingWidth="160.07696533203125">
          <font>
             <Font name="System Bold" size="15.5" />
          </font>
       </Text>
       <Text layoutX="292.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Detail:" wrappingWidth="36.87701416015625" />
-      <TextArea layoutX="292.0" layoutY="134.0" prefHeight="78.0" prefWidth="266.0" text="- Transmisi Otomatis&#10;- Tenaga 87 hp&#10;- Ka[asitas Tempat Duduk 7&#10;- Kapasitas Mesin 1197 cc" />
-      <Button layoutX="297.0" layoutY="245.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="150.0" text="RENTAL">
+      <TextArea fx:id="detailTextArea" layoutX="292.0" layoutY="134.0" prefHeight="96.0" prefWidth="266.0" text="- Transmisi Otomatis&#10;- Kapasitas Tempat Duduk 7&#10;- Kapasitas Mesin 1197 cc&#10;- Jenis: SUV" />
+      <Button fx:id="rentalButton" layoutX="297.0" layoutY="245.0" mnemonicParsing="false" onAction="#toDetail" prefHeight="54.0" prefWidth="150.0" text="RENTAL">
          <font>
             <Font name="System Bold" size="20.0" />
          </font></Button>

@@ -11,6 +11,8 @@ public class InformasiMobil {
     int id;
     static int nextId=0;
 
+    //String merk;
+
     public InformasiMobil(JenisMobilTable jenisMobil,String namaMobil,double harga){
         this.id = nextId;
         this.jenisMobil = jenisMobil;
@@ -19,7 +21,6 @@ public class InformasiMobil {
         this.action.setText("Edit");
         nextId++;
     }
-
     public int getId() {
         return id;
     }
@@ -55,6 +56,9 @@ public class InformasiMobil {
     }
 
     public String getMerk() {
+        return jenisMobil.getMerk();
+    }
+    public String getMerk1() {
         return jenisMobil.getMerk();
     }
 

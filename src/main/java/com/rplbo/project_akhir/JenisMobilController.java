@@ -56,9 +56,6 @@ public class JenisMobilController implements Initializable{
     private TableColumn<JenisMobilTable, Void> action;
     @FXML
     ObservableList<JenisMobilTable> list = FXCollections.observableArrayList(
-        new JenisMobilTable(1, "tes", "null", "null", 2, "Matic", "null"),
-        new JenisMobilTable(2, "tes2", "null2", "null2", 1, "Manual", "null2"),
-        new JenisMobilTable(3, "tes3", "null3", "null3", 2, "Matic", "null3")
     );
 
     Parent root;
@@ -68,19 +65,47 @@ public class JenisMobilController implements Initializable{
 
 
     public void initialize(URL url,ResourceBundle rb){
-        
+        ObservableList<JenisMobilTable> dataJenis = FXCollections.observableArrayList(StorageJenisMobil.getListJenis());
         namaMobil.setCellValueFactory(new PropertyValueFactory<>("namaMobil"));
         merk.setCellValueFactory(new PropertyValueFactory<>("merk"));
         mesin.setCellValueFactory(new PropertyValueFactory<>("mesin"));
         kapasitas.setCellValueFactory(new PropertyValueFactory<>("kapasitas"));
         transmisi.setCellValueFactory(new PropertyValueFactory<>("transmisi"));
         jenis.setCellValueFactory(new PropertyValueFactory<>("jenis"));
-    
-        jenisMobilTable.setItems(list);
-
+        action.setCellValueFactory(new PropertyValueFactory<>("action"));
+        jenisMobilTable.setItems(dataJenis);
+        for (JenisMobilTable jenisMobil : dataJenis) {
+            jenisMobil.getAction().setId(Integer.toString(jenisMobil.getId())) ;
+            jenisMobil.getAction().setOnAction(e-> {
+                try{
+                updateInfo(e);} catch(IOException ex){}
+                });
+        }
         
     }
+    public void updateInfo(ActionEvent event)throws IOException {
+        Button btn = (Button) event.getSource();
+        ObservableList<JenisMobilTable> dataMobils = FXCollections.observableArrayList(StorageJenisMobil.getListJenis());
+        JenisMobilTable tempe = null;
+        for (JenisMobilTable informasiMobil : dataMobils) {
+            if(informasiMobil.getId() == Integer.parseInt(btn.getId())){
+                System.out.println(informasiMobil.getId());
+                tempe = informasiMobil;
+            }
+        }
 
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("jenisMobilEdit.fxml"));
+        root = loader.load();
+
+        JenisMobilEdit update = loader.getController();
+        update.showOldData(tempe);
+
+        scene = new Scene(root);
+        this.stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        this.stage.setScene(scene);
+        this.stage.show();
+    }
     public ObservableList<JenisMobilTable> getList() {
         return list;
     }
@@ -96,13 +121,18 @@ public class JenisMobilController implements Initializable{
         this.stage.show();
     }
     
-    public void addJenisMobil() {
-        // Implement the logic for adding a new jenis mobil
+    public void toAddJenisMobil(ActionEvent event)throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("jenisMobilAdd.fxml"));
+        this.root = loader.load();
+        this.scene = new Scene(this.root);
+        this.stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        this.stage.setScene(scene);
+        this.stage.show();
     }
     
     public void search() {
-        // Implement the logic for searching jenis mobil
+    
     }
     
-    // Implement other methods for updating the jenisMobilTable
 }
