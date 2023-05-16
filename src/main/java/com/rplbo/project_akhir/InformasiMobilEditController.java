@@ -1,7 +1,6 @@
 package com.rplbo.project_akhir;
 
 import java.io.IOException;
-import java.util.List;
 import java.util.ResourceBundle;
 import java.net.URL;
 
@@ -89,8 +88,7 @@ public class InformasiMobilEditController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        List<JenisMobilTable> jenisMobilTableList = this.jenisMobilTableList.getList();
-        for (JenisMobilTable jenisMobil : jenisMobilTableList) {
+        for (JenisMobilTable jenisMobil : StorageJenisMobil.getListJenis()) {
             jenisMobilList.add(jenisMobil.getNamaMobil());
         }
         jenisMobilComboBox.setItems(jenisMobilList);
@@ -102,10 +100,11 @@ public class InformasiMobilEditController implements Initializable {
         String hargaRental = hargaRentalField.getText();
         String jenisMobil = jenisMobilComboBox.getValue();
         JenisMobilTable jenisMobilObj = null;
-        System.out.println("Size of jenisMobilTableList: " + jenisMobilTableList.getList().size());
-        for (JenisMobilTable j : jenisMobilTableList.getList()) {
+        System.out.println("Size of jenisMobilTableList: " + StorageJenisMobil.getListJenis());
+        for (JenisMobilTable j : StorageJenisMobil.getListJenis()) {
             System.out.println(j.getNamaMobil());
             if (j.getNamaMobil().equals(jenisMobil)) {
+                System.out.println("Success");
                 jenisMobilObj = j;
                 break;
             }}
