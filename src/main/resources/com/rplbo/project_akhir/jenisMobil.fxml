@@ -13,19 +13,14 @@
    <children>
       <Pane layoutY="3.0" prefHeight="85.0" prefWidth="600.0">
          <children>
-            <ImageView fitHeight="400.0" fitWidth="600.0" layoutY="-4.0" opacity="0.4" pickOnBounds="true">
-               <image>
-                  <Image url="@../../../img/background%20aplikasi.jpg" />
-               </image>
-            </ImageView>
-            <Button fx:id="backBttn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#toLogin" text="Kembali" />
-            <Button layoutX="14.0" layoutY="55.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="119.0" text="+ Jenis Mobil" />
-            <TextField layoutX="287.0" layoutY="51.0" prefHeight="32.0" prefWidth="247.0" promptText="Search" />
-            <Button layoutX="546.0" layoutY="51.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0">
+            <Button fx:id="backBttn" layoutX="14.0" layoutY="2.0" mnemonicParsing="false" onAction="#toLogin" text="Back" />
+            <Button layoutX="14.0" layoutY="44.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="119.0" text="+Jenis Mobil" />
+            <TextField layoutX="286.0" layoutY="47.0" prefHeight="25.0" prefWidth="247.0" promptText="Search" />
+            <Button layoutX="542.0" layoutY="47.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="40.0">
                <graphic>
                   <ImageView fitHeight="18.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../img/search_logo-removebg-preview.jpg" />
+                        <Image url="@../../../img/profile%20account.jpg" />
                      </image>
                   </ImageView>
                </graphic>

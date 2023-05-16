@@ -49,7 +49,7 @@ public class JenisMobilTable {
         this.kapasitas = kapasitas;
     }
     
-    public void getNamaMobil(String namaMobil) {
+    public void setNamaMobil(String namaMobil) {
         this.namaMobil = namaMobil;
     }
     

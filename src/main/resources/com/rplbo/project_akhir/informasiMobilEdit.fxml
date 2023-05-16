@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Rectangle?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.project_akhir.InformasiMobilController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.project_akhir.InformasiMobilEditController">
    <children>
       <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dadbdc" height="231.0" layoutX="14.0" layoutY="51.0" stroke="BLACK" strokeType="INSIDE" width="217.0" />
@@ -19,7 +19,7 @@
       <ComboBox fx:id="jenisMobilComboBox" layoutX="263.0" layoutY="121.0" prefWidth="150.0" />
       <Label layoutX="264.0" layoutY="104.0" text="Jenis Mobil" />
       <Button fx:id="saveButton" layoutX="260.0" layoutY="235.0" mnemonicParsing="false" onAction="#saveButtonAction" prefHeight="47.0" prefWidth="68.0" text="SAVE" />
-      <Button fx:id="deleteButton" layoutX="345.0" layoutY="235.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="68.0" text="DELETE" />
+      <Button fx:id="deleteButton" layoutX="345.0" layoutY="235.0" mnemonicParsing="false" onAction="#deleteButtonAction" prefHeight="47.0" prefWidth="68.0" text="DELETE" />
       <Button layoutX="14.0" layoutY="290.0" mnemonicParsing="false" text="Upload Image" />
       <ImageView fitHeight="231.0" fitWidth="217.0" layoutX="14.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" />
    </children>
