@@ -53,13 +53,20 @@ public class UserMainMenu implements Initializable{
     }
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        ObservableList<InformasiMobil> dataJenis = FXCollections.observableArrayList(StorageInformasiMobil.getListMobil());
+        ObservableList<InformasiMobil> tempe = FXCollections.observableArrayList();
+        for (InformasiMobil i : StorageInformasiMobil.getListMobil()) {
+            if(i.getStatus()==true){
+                tempe.add(i);
+            }
+        }
+
         numberColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
         nameColumn.setCellValueFactory(new PropertyValueFactory<>("merk"));
         rentalPriceColumn.setCellValueFactory(new PropertyValueFactory<>("harga"));
         actionColumn.setCellValueFactory(new PropertyValueFactory<>("action"));
-        tableView.setItems(dataJenis);
-        for (InformasiMobil jenisMobil : dataJenis) {
+
+        tableView.setItems(tempe);
+        for (InformasiMobil jenisMobil : tempe) {
             jenisMobil.getAction().setId(Integer.toString(jenisMobil.getId())) ;
             jenisMobil.getAction().setOnAction(e-> {
                 try{

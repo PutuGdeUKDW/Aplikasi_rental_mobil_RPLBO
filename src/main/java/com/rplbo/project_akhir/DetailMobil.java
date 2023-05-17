@@ -2,8 +2,6 @@ package com.rplbo.project_akhir;
 
 import java.io.IOException;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -66,11 +64,11 @@ public class DetailMobil {
         this.stage.show();
     }
     public void toDetail(ActionEvent event) throws IOException {
-        ObservableList<InformasiMobil> dataMobils = FXCollections.observableArrayList(StorageInformasiMobil.getListMobil());
         InformasiMobil tempe = null;
-        for (InformasiMobil informasiMobil : dataMobils) {
+        for (InformasiMobil informasiMobil : StorageInformasiMobil.getListMobil()) {
             if(informasiMobil.getId() == mobil.getId()){
                 tempe = informasiMobil;
+                break;
             }
         }
         FXMLLoader loader = new FXMLLoader(getClass().getResource("DetailPembayaran.fxml"));
@@ -84,16 +82,5 @@ public class DetailMobil {
 
         this.stage.setScene(scene);
         this.stage.show();
-    }
-
-    public void rental(ActionEvent event) throws IOException{
-        ObservableList<InformasiMobil> dataJenis = FXCollections.observableArrayList(StorageInformasiMobil.getListMobil());
-        for (InformasiMobil jenisMobil : dataJenis) {
-            jenisMobil.getAction().setId(Integer.toString(jenisMobil.getId())) ;
-            jenisMobil.getAction().setOnAction(e-> {
-                try{
-                toDetail(e);} catch(IOException ex){}
-                });
-        }   
     }
 }

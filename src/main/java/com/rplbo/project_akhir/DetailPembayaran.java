@@ -75,9 +75,9 @@ public class DetailPembayaran {
 
             String rentalDescription = "Deskripsi Total Rental :\n\n" +
                     "Biaya Rental = Rp. " + mobil.getHarga() + "\n\n" +
-                    "Total Hari Peminjaman = " + days+1 + " hari\n" +
+                    "Total Hari Peminjaman = " + days + " hari\n" +
                     "----------------------------------------\n" +
-                    "Total Tagihan = Rp. " + ((days+1) * mobil.getHarga());
+                    "Total Tagihan = Rp. " + ((days) * mobil.getHarga());
 
             deskripsiRentalTextArea.setText(rentalDescription);
         }
@@ -95,12 +95,23 @@ public class DetailPembayaran {
     
 
     public void toForward(ActionEvent event) throws IOException {
+        InformasiMobil tempe = null;
+        for (InformasiMobil informasiMobil : StorageInformasiMobil.getListMobil()) {
+            if(informasiMobil.getId() == mobil.getId()){
+                tempe = informasiMobil;
+                break;
+            }
+        }
         FXMLLoader loader = new FXMLLoader(getClass().getResource("MetodePembayaran.fxml"));
         this.root = loader.load();
+
+        MetodePembayaran update = loader.getController();
+        update.showOldData(tempe);
+
         this.scene = new Scene(this.root);
         this.stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
         this.stage.setScene(scene);
-        this.stage.show();
-    }
+        this.stage.show();}
+
 }

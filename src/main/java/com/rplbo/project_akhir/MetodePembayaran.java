@@ -45,6 +45,8 @@ public class MetodePembayaran {
     Scene scene;
     Stage stage;
 
+    InformasiMobil mobil;
+
     public void toBack(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("DetailPembayaran.fxml"));
         this.root = loader.load();
@@ -57,12 +59,26 @@ public class MetodePembayaran {
     
 
     public void toForward(ActionEvent event) throws IOException {
+        InformasiMobil tempe = null;
+        for (InformasiMobil informasiMobil : StorageInformasiMobil.getListMobil()) {
+            if(informasiMobil.getId() == mobil.getId()){
+                tempe = informasiMobil;
+            }
+        }
         FXMLLoader loader = new FXMLLoader(getClass().getResource("StatusPembayaran.fxml"));
         this.root = loader.load();
+
+        StatusPembayaran update = loader.getController();
+        update.showOldData(tempe);
+
         this.scene = new Scene(this.root);
         this.stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
         this.stage.setScene(scene);
         this.stage.show();
+    }
+
+    public void showOldData(InformasiMobil mobil) {
+        this.mobil = mobil;
     }
 }
