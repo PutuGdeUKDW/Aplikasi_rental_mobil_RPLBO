@@ -18,7 +18,7 @@
             <Image url="@../../../img/background%20aplikasi.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="kembaliButton" layoutX="14.0" layoutY="364.0" mnemonicParsing="false" onAction="#toBack" text="Kembali" />
+      <Button fx:id="kembaliButton" layoutX="14.0" layoutY="371.0" mnemonicParsing="false" onAction="#toBack" text="Kembali" />
       <Text layoutX="36.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobil yang kamu rental :">
          <font>
             <Font name="System Bold" size="12.0" />
@@ -55,11 +55,11 @@
             <Font name="System Bold" size="12.0" />
          </font></Text>
       <TextArea fx:id="deskripsiRentalTextArea" layoutX="237.0" layoutY="137.0" prefHeight="185.0" prefWidth="334.0" text="Deskripsi Total Rental :&#10;&#10;Biaya Rental = Rp. 160.000&#10;&#10;Total Hari Peminjaman = 10 hari&#10;----------------------------------------&#10;Total Tagihan = Rp. 1.600.000&#10;&#10;&#10;" />
-      <Button fx:id="metodePembayaranButton" layoutX="322.0" layoutY="337.0" mnemonicParsing="false" onAction="#toForward" prefHeight="40.0" prefWidth="179.0" text="Pilih Metode Pembayaran">
+      <Button fx:id="metodePembayaranButton" layoutX="397.0" layoutY="344.0" mnemonicParsing="false" onAction="#toForward" prefHeight="40.0" prefWidth="179.0" text="Pilih Metode Pembayaran">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Button>
-      <Line endX="10.33331298828125" layoutX="402.0" layoutY="105.0" startX="-4.33331298828125" />
+      <Line endX="22.0" layoutX="398.0" layoutY="105.0" startX="-4.33331298828125" />
       <Text layoutX="179.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rental Mobil" textAlignment="CENTER" wrappingWidth="269.1328125">
          <font>
             <Font size="38.0" />
