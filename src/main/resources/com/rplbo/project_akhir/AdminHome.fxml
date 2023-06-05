@@ -4,18 +4,37 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.project_akhir.AdminHomeController">
    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#217dffa6" height="400.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
       <Pane layoutY="3.0" prefHeight="85.0" prefWidth="600.0">
          <children>
-            <Button fx:id="backBttn" layoutX="14.0" layoutY="2.0" mnemonicParsing="false" onAction="#toLogin" text="Back" />
-            <Button fx:id="addInformasiMobil" layoutX="20.0" layoutY="43.0" mnemonicParsing="false" onAction="#toaddInformasiMobil" prefHeight="32.0" prefWidth="119.0" text="+Informasi Mobil" />
-            <Button fx:id="jenisMobilButton" layoutX="152.0" layoutY="43.0" mnemonicParsing="false" onAction="#toJenis" prefHeight="32.0" prefWidth="119.0" text="Jenis Mobil" />
-            <TextField layoutX="286.0" layoutY="47.0" prefHeight="25.0" prefWidth="247.0" promptText="Search" />
-            <Button fx:id="refresh" layoutX="542.0" layoutY="47.0" mnemonicParsing="false" onAction="#refreshData" prefHeight="25.0" prefWidth="40.0" />
+            <ImageView fitHeight="108.0" fitWidth="200.0" layoutX="397.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../img/bg_car-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="115.0" fitWidth="249.0" layoutX="278.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../img/town-car.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="backBttn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#toLogin" text="Kembali" />
+            <Button fx:id="addInformasiMobil" layoutX="26.0" layoutY="56.0" mnemonicParsing="false" onAction="#toaddInformasiMobil" prefHeight="32.0" prefWidth="119.0" text="+ Informasi Mobil" />
+            <Button fx:id="jenisMobilButton" layoutX="159.0" layoutY="55.0" mnemonicParsing="false" onAction="#toJenis" prefHeight="32.0" prefWidth="119.0" text="+ Jenis Mobil" />
+            <TextField layoutX="399.0" layoutY="26.0" prefHeight="25.0" prefWidth="148.0" promptText="Search" />
+            <Button fx:id="refresh" layoutX="556.0" layoutY="26.0" mnemonicParsing="false" onAction="#refreshData" prefHeight="11.0" prefWidth="32.0" />
+            <ImageView fitHeight="17.0" fitWidth="22.0" layoutX="564.0" layoutY="30.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../img/search_logo-removebg-preview.jpg" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
       <TableView fx:id="tableView" layoutX="10.0" layoutY="106.0" prefHeight="279.0" prefWidth="579.0">
