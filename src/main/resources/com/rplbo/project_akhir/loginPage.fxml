@@ -4,17 +4,30 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="283.0" prefWidth="487.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.project_akhir.loginPageController">
+<AnchorPane prefHeight="296.0" prefWidth="487.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.project_akhir.loginPageController">
    <children>
-      <TextField fx:id="username" layoutX="218.0" layoutY="74.0" promptText="Masukkan Username" />
-      <PasswordField fx:id="password" layoutX="218.0" layoutY="131.0" promptText="Pass" />
-      <Button fx:id="loginButton" layoutX="124.0" layoutY="217.0" mnemonicParsing="false" onAction="#toAdminHome" text="Login" />
-      <Button fx:id="backButton" layoutX="248.0" layoutY="217.0" mnemonicParsing="false" text="Kembali"  onAction="#toBack"/>
-      <Label layoutX="110.0" layoutY="78.0" text="Username" />
-      <Label layoutX="110.0" layoutY="135.0" style="-fx-font-weight: bold;" text="Password" />
-      <Label fx:id="note" layoutX="110.0" layoutY="163.0" style="visibility: false;" text="Label" />
+      <ImageView fitHeight="296.0" fitWidth="487.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/car_bg.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1de064e0" height="150.0" layoutX="144.0" layoutY="82.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <TextField fx:id="username" alignment="TOP_CENTER" layoutX="187.0" layoutY="98.0" prefHeight="25.0" prefWidth="113.0" promptText="Username">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></TextField>
+      <PasswordField fx:id="password" alignment="TOP_CENTER" layoutX="186.0" layoutY="135.0" prefHeight="25.0" prefWidth="113.0" promptText="Password">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></PasswordField>
+      <Button fx:id="loginButton" layoutX="217.0" layoutY="193.0" mnemonicParsing="false" onAction="#toAdminHome" prefHeight="25.0" prefWidth="52.0" text="Login" textFill="#2f2f2f" />
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#toBack" prefHeight="25.0" prefWidth="60.0" text="Kembali" />
+      <Label fx:id="note" alignment="TOP_CENTER" layoutX="149.0" layoutY="164.0" prefHeight="25.0" prefWidth="191.0" style="visibility: false;" text="Label" textAlignment="CENTER" />
    </children>
 </AnchorPane>
