@@ -6,25 +6,32 @@
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rplbo.project_akhir.JenisMobilEdit">
    <children>
+      <ImageView fitHeight="407.0" fitWidth="600.0" layoutY="-2.0" opacity="0.54" pickOnBounds="true">
+         <image>
+            <Image url="@../../../img/rental-mobil.png" />
+         </image>
+      </ImageView>
       <RadioButton fx:id="manualRadioButton" layoutX="17.0" layoutY="191.0" mnemonicParsing="false" text="Manual">
          <toggleGroup>
             <ToggleGroup fx:id="transmisi" />
          </toggleGroup></RadioButton>
-      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#toBack" text="Back" />
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#toBack" text="Kembali" />
       <TextField fx:id="namaJenisMobilTextField" layoutX="18.0" layoutY="73.0" />
       <TextField fx:id="merkTextField" layoutX="183.0" layoutY="73.0" />
       <Label layoutX="18.0" layoutY="53.0" text="Nama Jenis Mobil" />
       <Label layoutX="183.0" layoutY="53.0" text="Merk" />
-      <Button fx:id="saveButton" layoutX="14.0" layoutY="237.0" mnemonicParsing="false" onAction="#saveButtonAction" prefHeight="47.0" prefWidth="68.0" text="SAVE" />
-      <Button fx:id="deleteButton" layoutX="99.0" layoutY="237.0" mnemonicParsing="false" onAction="#deleteButtonAction" prefHeight="47.0" prefWidth="68.0" text="DELETE" />
+      <Button fx:id="saveButton" layoutX="14.0" layoutY="237.0" mnemonicParsing="false" onAction="#saveButtonAction" prefHeight="47.0" prefWidth="68.0" text="Simpan" />
+      <Button fx:id="deleteButton" layoutX="99.0" layoutY="237.0" mnemonicParsing="false" onAction="#deleteButtonAction" prefHeight="47.0" prefWidth="68.0" text="Hapus" />
       <TextField fx:id="mesinTextField" layoutX="18.0" layoutY="130.0" />
       <Label layoutX="18.0" layoutY="110.0" text="Mesin" />
       <TextField fx:id="kapasitasTextField" layoutX="183.0" layoutY="130.0" />
-      <Label layoutX="183.0" layoutY="110.0" text="Kapasistas" />
+      <Label layoutX="183.0" layoutY="110.0" text="Kapasitas" />
       <RadioButton fx:id="maticRadioButton" layoutX="96.0" layoutY="191.0" mnemonicParsing="false" text="Matic" toggleGroup="$transmisi" />
       <Label layoutX="18.0" layoutY="170.0" text="Transmisi" />
       <Label layoutX="183.0" layoutY="164.0" text="Jenis" />
